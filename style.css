@@ -137,6 +137,7 @@ p.overlay {
     width: var(--Width-S) !important;
     height: 100%;
 }
+
 /* .col-3 {
     width: var(--Width-S);
     height: 100%;
@@ -301,8 +302,11 @@ svg * {
 }
 
 .hero {
-flex-direction: row;
-align-items: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: var(--Gap-L);
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .section-content {
@@ -324,10 +328,11 @@ align-items: flex-end;
     gap: var(--Gap-XXL, 120px);
     position: relative;
     background-color: var(--Color-bg-Secondary);
-    box-shadow:0px 0px 40px -4px var(--Color-fg-Shadow, rgba(0, 0, 0, 0.30)), 1px 2px 8px -2px var(--Color-fg-Shadow, rgba(0, 0, 0, 0.30));;
+    box-shadow: 0px 0px 40px -4px var(--Color-fg-Shadow, rgba(0, 0, 0, 0.30)), 1px 2px 8px -2px var(--Color-fg-Shadow, rgba(0, 0, 0, 0.30));
+    ;
 }
 
-.sticky{
+.sticky {
     position: sticky;
     top: 0;
 }
@@ -356,4 +361,17 @@ align-items: flex-end;
     width: calc((var(--Column) * 12) + (var(--Gutter) * 11));
     padding-left: var(--Width-XL);
     margin-top: 20vh;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: var(--Gap-XL, 40px) 0 var(--Gap-XL, 40px) 0;
+    align-items: flex-start;
+    gap: var(--Gap-L);
+}
+
+#section-3{
+    padding-top: 0;
+    padding-bottom: 0;
 }

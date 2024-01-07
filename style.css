@@ -57,7 +57,7 @@ html * {
 }
 
 body {
-    background-color: var(--Color-bg-Primary);
+    background-color: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,12 +250,41 @@ svg * {
     width: var(--Width-M, 332px);
 }
 
+.card{
+    display: flex;
+    width: var(--Width-M, 332px);
+    padding: var(--Padding-L, 24px);
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: var(--Corner-radius-L, 28px);
+    background: var(--Color-bg-Primary, #000);
+}
+
+.card .text-block .intestazione,.card .text-block .intestazione h2, .card .text-block, .card .testo-cta {
+    width: calc(var(--Width-M, 332px) - (var(--Padding-L, 24px)*2)) ;
+}
+
 .text-block {
     display: flex;
     width: var(--Width-M, 332px);
     flex-direction: column;
     align-items: flex-start;
     gap: var(--Gap-M, 20px);
+}
+
+.card-box {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--Gap-M, 20px);
+    align-self: stretch;
+}
+
+.container-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Gap-XL, 40px);
+    flex: 1 0 0;
 }
 
 .section-content {
@@ -268,7 +297,7 @@ svg * {
 .section {
     display: flex;
     width: 100vw;
-    height: auto; 
+    height: auto;
     padding: var(--Gap-XXL, 120px) 0px;
     flex-direction: column;
     justify-content: center;

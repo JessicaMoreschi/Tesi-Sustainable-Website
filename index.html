@@ -8,58 +8,85 @@
   </head>
   <body>
     <div class="nav-container">
-        <button class="nav nav-active" id="nav-0" onclick="changeSection(0)">
-          <svg class="S">
-            <path
-              d="M2.42012 13.034C2.28394 12.8183 2.21584 12.7105 2.17772 12.5442C2.14909 12.4193 2.14909 12.2223 2.17772 12.0974C2.21584 11.9311 2.28394 11.8233 2.42012 11.6076C3.54553 9.82564 6.8954 5.3208 12.0004 5.3208C17.1054 5.3208 20.4553 9.82564 21.5807 11.6076C21.7169 11.8233 21.785 11.9311 21.8231 12.0974C21.8517 12.2223 21.8517 12.4193 21.8231 12.5442C21.785 12.7105 21.7169 12.8183 21.5807 13.034C20.4553 14.816 17.1054 19.3208 12.0004 19.3208C6.8954 19.3208 3.54553 14.816 2.42012 13.034Z"
-            />
-            <path
-              d="M12.0004 15.3208C13.6573 15.3208 15.0004 13.9777 15.0004 12.3208C15.0004 10.6639 13.6573 9.3208 12.0004 9.3208C10.3435 9.3208 9.0004 10.6639 9.0004 12.3208C9.0004 13.9777 10.3435 15.3208 12.0004 15.3208Z"
-            />
-          </svg>
-          <p>Vision</p>
-        </button>
-        <button class="nav" id="nav-1" onclick="changeSection(1)">
-          <svg class="S">
-            <path
-              d="M6 6.84619L10.5 11.3462M6 6.84619H3L2 3.84619L3 2.84619L6 3.84619V6.84619ZM19.259 3.5872L16.6314 6.21482C16.2354 6.61084 16.0373 6.80885 15.9632 7.03717C15.8979 7.23802 15.8979 7.45437 15.9632 7.65521C16.0373 7.88354 16.2354 8.08154 16.6314 8.47756L16.8686 8.71482C17.2646 9.11084 17.4627 9.30885 17.691 9.38303C17.8918 9.44829 18.1082 9.44829 18.309 9.38303C18.5373 9.30885 18.7354 9.11084 19.1314 8.71482L21.5893 6.25691C21.854 6.90108 22 7.60659 22 8.34619C22 11.3838 19.5376 13.8462 16.5 13.8462C16.1338 13.8462 15.7759 13.8104 15.4298 13.7421C14.9436 13.6462 14.7005 13.5983 14.5532 13.613C14.3965 13.6286 14.3193 13.6521 14.1805 13.7264C14.0499 13.7962 13.919 13.9272 13.657 14.1892L6.5 21.3462C5.67157 22.1746 4.32843 22.1746 3.5 21.3462C2.67157 20.5178 2.67157 19.1746 3.5 18.3462L10.657 11.1892C10.919 10.9272 11.0499 10.7962 11.1198 10.6657C11.1941 10.5269 11.2176 10.4497 11.2332 10.293C11.2479 10.1456 11.1999 9.90257 11.1041 9.41643C11.0358 9.07025 11 8.7124 11 8.34619C11 5.30863 13.4624 2.84619 16.5 2.84619C17.5055 2.84619 18.448 3.11601 19.259 3.5872ZM12.0001 15.8461L17.5 21.3461C18.3284 22.1745 19.6716 22.1745 20.5 21.3461C21.3284 20.5177 21.3284 19.1745 20.5 18.3461L15.9753 13.8215C15.655 13.7912 15.3427 13.7334 15.0408 13.6505C14.6517 13.5437 14.2249 13.6212 13.9397 13.9065L12.0001 15.8461Z"
-            />
-          </svg>
-          <p>Servizi</p>
-        </button>
-        <button class="nav" id="nav-2" onclick="changeSection(2)">
-          <svg class="S">
-            <path
-              d="M5 12.3716C5 8.50559 8.13401 5.37158 12 5.37158M16.4999 7.87158L11.9999 12.3716M22 12.3716C22 17.8944 17.5228 22.3716 12 22.3716C6.47715 22.3716 2 17.8944 2 12.3716C2 6.84873 6.47715 2.37158 12 2.37158C17.5228 2.37158 22 6.84873 22 12.3716ZM13 12.3716C13 12.9239 12.5523 13.3716 12 13.3716C11.4477 13.3716 11 12.9239 11 12.3716C11 11.8193 11.4477 11.3716 12 11.3716C12.5523 11.3716 13 11.8193 13 12.3716Z"
-            />
-          </svg>
-          <p>Kpi</p>
-        </button>
-        <button class="nav" id="nav-3" onclick="changeSection(3)">
-          <svg class="S">
-            <path
-              d="M12 16.397H7.5C6.10444 16.397 5.40665 16.397 4.83886 16.5692C3.56045 16.957 2.56004 17.9574 2.17224 19.2358C2 19.8036 2 20.5014 2 21.897M19 21.897V15.897M16 18.897H22M14.5 8.39697C14.5 10.8823 12.4853 12.897 10 12.897C7.51472 12.897 5.5 10.8823 5.5 8.39697C5.5 5.91169 7.51472 3.89697 10 3.89697C12.4853 3.89697 14.5 5.91169 14.5 8.39697Z"
-            />
-          </svg>
-          <p>Unisciti</p>
-        </button>
-        <button class="nav" id="nav-4" onclick="changeSection(4)">
-          <svg class="S">
-            <path
-              d="M22 21.4224V19.4224C22 17.5585 20.7252 15.9924 19 15.5484M15.5 3.71312C16.9659 4.30651 18 5.74367 18 7.42236C18 9.10105 16.9659 10.5382 15.5 11.1316M17 21.4224C17 19.5586 17 18.6267 16.6955 17.8916C16.2895 16.9115 15.5108 16.1328 14.5307 15.7268C13.7956 15.4224 12.8638 15.4224 11 15.4224H8C6.13623 15.4224 5.20435 15.4224 4.46927 15.7268C3.48915 16.1328 2.71046 16.9115 2.30448 17.8916C2 18.6267 2 19.5586 2 21.4224M13.5 7.42236C13.5 9.6315 11.7091 11.4224 9.5 11.4224C7.29086 11.4224 5.5 9.6315 5.5 7.42236C5.5 5.21322 7.29086 3.42236 9.5 3.42236C11.7091 3.42236 13.5 5.21322 13.5 7.42236Z"
-            />
-          </svg>
-          <p>Partners</p>
-        </button>
+      <button class="nav nav-active" id="nav-0" onclick="changeSection(1)">
+        <svg class="S">
+          <path
+            d="M2.42012 13.034C2.28394 12.8183 2.21584 12.7105 2.17772 12.5442C2.14909 12.4193 2.14909 12.2223 2.17772 12.0974C2.21584 11.9311 2.28394 11.8233 2.42012 11.6076C3.54553 9.82564 6.8954 5.3208 12.0004 5.3208C17.1054 5.3208 20.4553 9.82564 21.5807 11.6076C21.7169 11.8233 21.785 11.9311 21.8231 12.0974C21.8517 12.2223 21.8517 12.4193 21.8231 12.5442C21.785 12.7105 21.7169 12.8183 21.5807 13.034C20.4553 14.816 17.1054 19.3208 12.0004 19.3208C6.8954 19.3208 3.54553 14.816 2.42012 13.034Z"
+          />
+          <path
+            d="M12.0004 15.3208C13.6573 15.3208 15.0004 13.9777 15.0004 12.3208C15.0004 10.6639 13.6573 9.3208 12.0004 9.3208C10.3435 9.3208 9.0004 10.6639 9.0004 12.3208C9.0004 13.9777 10.3435 15.3208 12.0004 15.3208Z"
+          />
+        </svg>
+        <p>Vision</p>
+      </button>
+      <button class="nav" id="nav-1" onclick="changeSection(2)">
+        <svg class="S">
+          <path
+            d="M6 6.84619L10.5 11.3462M6 6.84619H3L2 3.84619L3 2.84619L6 3.84619V6.84619ZM19.259 3.5872L16.6314 6.21482C16.2354 6.61084 16.0373 6.80885 15.9632 7.03717C15.8979 7.23802 15.8979 7.45437 15.9632 7.65521C16.0373 7.88354 16.2354 8.08154 16.6314 8.47756L16.8686 8.71482C17.2646 9.11084 17.4627 9.30885 17.691 9.38303C17.8918 9.44829 18.1082 9.44829 18.309 9.38303C18.5373 9.30885 18.7354 9.11084 19.1314 8.71482L21.5893 6.25691C21.854 6.90108 22 7.60659 22 8.34619C22 11.3838 19.5376 13.8462 16.5 13.8462C16.1338 13.8462 15.7759 13.8104 15.4298 13.7421C14.9436 13.6462 14.7005 13.5983 14.5532 13.613C14.3965 13.6286 14.3193 13.6521 14.1805 13.7264C14.0499 13.7962 13.919 13.9272 13.657 14.1892L6.5 21.3462C5.67157 22.1746 4.32843 22.1746 3.5 21.3462C2.67157 20.5178 2.67157 19.1746 3.5 18.3462L10.657 11.1892C10.919 10.9272 11.0499 10.7962 11.1198 10.6657C11.1941 10.5269 11.2176 10.4497 11.2332 10.293C11.2479 10.1456 11.1999 9.90257 11.1041 9.41643C11.0358 9.07025 11 8.7124 11 8.34619C11 5.30863 13.4624 2.84619 16.5 2.84619C17.5055 2.84619 18.448 3.11601 19.259 3.5872ZM12.0001 15.8461L17.5 21.3461C18.3284 22.1745 19.6716 22.1745 20.5 21.3461C21.3284 20.5177 21.3284 19.1745 20.5 18.3461L15.9753 13.8215C15.655 13.7912 15.3427 13.7334 15.0408 13.6505C14.6517 13.5437 14.2249 13.6212 13.9397 13.9065L12.0001 15.8461Z"
+          />
+        </svg>
+        <p>Servizi</p>
+      </button>
+      <button class="nav" id="nav-2" onclick="changeSection(3)">
+        <svg class="S">
+          <path
+            d="M5 12.3716C5 8.50559 8.13401 5.37158 12 5.37158M16.4999 7.87158L11.9999 12.3716M22 12.3716C22 17.8944 17.5228 22.3716 12 22.3716C6.47715 22.3716 2 17.8944 2 12.3716C2 6.84873 6.47715 2.37158 12 2.37158C17.5228 2.37158 22 6.84873 22 12.3716ZM13 12.3716C13 12.9239 12.5523 13.3716 12 13.3716C11.4477 13.3716 11 12.9239 11 12.3716C11 11.8193 11.4477 11.3716 12 11.3716C12.5523 11.3716 13 11.8193 13 12.3716Z"
+          />
+        </svg>
+        <p>Kpi</p>
+      </button>
+      <button class="nav" id="nav-3" onclick="changeSection(4)">
+        <svg class="S">
+          <path
+            d="M12 16.397H7.5C6.10444 16.397 5.40665 16.397 4.83886 16.5692C3.56045 16.957 2.56004 17.9574 2.17224 19.2358C2 19.8036 2 20.5014 2 21.897M19 21.897V15.897M16 18.897H22M14.5 8.39697C14.5 10.8823 12.4853 12.897 10 12.897C7.51472 12.897 5.5 10.8823 5.5 8.39697C5.5 5.91169 7.51472 3.89697 10 3.89697C12.4853 3.89697 14.5 5.91169 14.5 8.39697Z"
+          />
+        </svg>
+        <p>Unisciti</p>
+      </button>
+      <button class="nav" id="nav-4" onclick="changeSection(5)">
+        <svg class="S">
+          <path
+            d="M22 21.4224V19.4224C22 17.5585 20.7252 15.9924 19 15.5484M15.5 3.71312C16.9659 4.30651 18 5.74367 18 7.42236C18 9.10105 16.9659 10.5382 15.5 11.1316M17 21.4224C17 19.5586 17 18.6267 16.6955 17.8916C16.2895 16.9115 15.5108 16.1328 14.5307 15.7268C13.7956 15.4224 12.8638 15.4224 11 15.4224H8C6.13623 15.4224 5.20435 15.4224 4.46927 15.7268C3.48915 16.1328 2.71046 16.9115 2.30448 17.8916C2 18.6267 2 19.5586 2 21.4224M13.5 7.42236C13.5 9.6315 11.7091 11.4224 9.5 11.4224C7.29086 11.4224 5.5 9.6315 5.5 7.42236C5.5 5.21322 7.29086 3.42236 9.5 3.42236C11.7091 3.42236 13.5 5.21322 13.5 7.42236Z"
+          />
+        </svg>
+        <p>Partners</p>
+      </button>
+    </div>
+
+    <div id="macchina">
+      <div class="sticky">
+        <img
+          src="assets/illustrations/macchina.svg"
+          style="width: var(--Width-L); height: auto; padding-top: 40vh"
+        />
       </div>
-    <div class="section" id="section-0" onmouseenter="changeNav(0)">
+    </div>
+
+    <div class="section sticky dark" id="section-0" onmouseenter="changeNav(0)">
       <div class="section-content">
-        <div class="col-1"></div>
+        <div class="container-block hero">
+          <div class="text-block">
+            <div class="intestazione">
+              <h1 class="col-4">Il futuro della Mobilità</h1>
+            </div>
+          </div>
+          <div class="testo-cta">
+            <p class="col-2">Scopri la sicurezza del pilota automatico</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section sticky light" id="section-1" onmouseenter="changeNav(0)"
+    >
+      <div class="section-content">
+        <!-- <div class="col-1"></div> -->
         <div class="container-block">
           <div class="text-block">
             <div class="intestazione">
-              <p class="overlay">overlay</p>
-              <h2 class="col-4">Here the title of the chapter</h2>
+              <p class="overlay">vision</p>
+              <h2 class="col-5">
+                Automo apre la strada verso le automobili del futuro
+              </h2>
             </div>
             <div class="testo-cta">
               <p class>
@@ -79,105 +106,35 @@
               </button>
             </div>
           </div>
-          <div class="card-box">
-            <div class="card">
-              <div class="text-block">
-                <div class="intestazione">
-                  <p class="overlay">overlay</p>
-                  <h2 class="col-4">Here the title of the chapter</h2>
-                </div>
-                <div class="testo-cta">
-                  <p class>
-                    Questo è un esempio di un paragrafo. Puoi modificarlo o
-                    aggiungere i contenuti che preferisci. Seleziona “Modifica
-                    testo” o clicca due volte qui per aggiungere i tuoi
-                    contenuti e cambiare il font. È lo spazio ideale per
-                    raccontare la tua storia e farti conoscere.
-                  </p>
-                  <button class="primary">
-                    <p>name</p>
-                    <svg class="S">
-                      <path
-                        d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="text-block">
-                <div class="intestazione">
-                  <p class="overlay">overlay</p>
-                  <h2 class="col-4">Here the title of the chapter</h2>
-                </div>
-                <div class="testo-cta">
-                  <p class>
-                    Questo è un esempio di un paragrafo. Puoi modificarlo o
-                    aggiungere i contenuti che preferisci. Seleziona “Modifica
-                    testo” o clicca due volte qui per aggiungere i tuoi
-                    contenuti e cambiare il font. È lo spazio ideale per
-                    raccontare la tua storia e farti conoscere.
-                  </p>
-                  <button class="primary">
-                    <p>name</p>
-                    <svg class="S">
-                      <path
-                        d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <div class="section" id="section-1" onmouseenter="changeNav(1)">
+    <!-- <div class="section section-null"></div> -->
+    <div class="section sticky light" id="section-2" onmouseenter="changeNav(1)">
       <div class="section-content">
-        <div class="col-1"></div>
         <div class="container-block">
           <div class="text-block">
             <div class="intestazione">
-              <p class="overlay">overlay</p>
-              <h2 class="col-4">Here the title of the chapter</h2>
-            </div>
-            <div class="testo-cta">
-              <p class>
-                Questo è un esempio di un paragrafo. Puoi modificarlo o
-                aggiungere i contenuti che preferisci. Seleziona “Modifica
-                testo” o clicca due volte qui per aggiungere i tuoi contenuti e
-                cambiare il font. È lo spazio ideale per raccontare la tua
-                storia e farti conoscere.
-              </p>
-              <button class="primary">
-                <p>name</p>
-                <svg class="S">
-                  <path
-                    d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
-                  />
-                </svg>
-              </button>
+              <p class="overlay">servizi</p>
+              <h2 class="col-4">
+                Offriamo prodotti e servizi in tutto il mondo
+              </h2>
             </div>
           </div>
           <div class="card-box">
             <div class="card">
               <div class="text-block">
                 <div class="intestazione">
-                  <p class="overlay">overlay</p>
-                  <h2 class="col-4">Here the title of the chapter</h2>
+                  <h3 class="col-4">Informazioni dirette</h3>
                 </div>
                 <div class="testo-cta">
                   <p class>
                     Questo è un esempio di un paragrafo. Puoi modificarlo o
                     aggiungere i contenuti che preferisci. Seleziona “Modifica
-                    testo” o clicca due volte qui per aggiungere i tuoi
-                    contenuti e cambiare il font. È lo spazio ideale per
-                    raccontare la tua storia e farti conoscere.
+                    testo” o clicca due volte
                   </p>
                   <button class="primary">
-                    <p>name</p>
+                    <p>esplora</p>
                     <svg class="S">
                       <path
                         d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
@@ -190,19 +147,38 @@
             <div class="card">
               <div class="text-block">
                 <div class="intestazione">
-                  <p class="overlay">overlay</p>
-                  <h2 class="col-4">Here the title of the chapter</h2>
+                  <h3 class="col-4">Pilota automatico</h3>
                 </div>
                 <div class="testo-cta">
                   <p class>
                     Questo è un esempio di un paragrafo. Puoi modificarlo o
                     aggiungere i contenuti che preferisci. Seleziona “Modifica
-                    testo” o clicca due volte qui per aggiungere i tuoi
-                    contenuti e cambiare il font. È lo spazio ideale per
-                    raccontare la tua storia e farti conoscere.
+                    testo” o clicca due volte
                   </p>
                   <button class="primary">
-                    <p>name</p>
+                    <p>esplora</p>
+                    <svg class="S">
+                      <path
+                        d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="text-block">
+                <div class="intestazione">
+                  <h3 class="col-4">Massima sensibilità</h3>
+                </div>
+                <div class="testo-cta">
+                  <p class>
+                    Questo è un esempio di un paragrafo. Puoi modificarlo o
+                    aggiungere i contenuti che preferisci. Seleziona “Modifica
+                    testo” o clicca due volte
+                  </p>
+                  <button class="primary">
+                    <p>esplora</p>
                     <svg class="S">
                       <path
                         d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
@@ -216,6 +192,310 @@
         </div>
       </div>
     </div>
+    <!-- <div class="section section-null"></div> -->
+    <div class="section sticky dark" id="section-3" onmouseenter="changeNav(2)">
+      <div class="section-content">
+        <div class="col-5"></div>
+        <div class="container-block">
+          <div class="text-block">
+            <div class="intestazione">
+              <p class="overlay">PERCHÉ AUTONO</p>
+              <h2 class="col-8">Un approccio diverso e un nuovo metodo di manifattura.</h2>
+            </div>
+            <div class="testo-cta">
+              <p class>
+                Questo è un esempio di un paragrafo. Puoi modificarlo o aggiungere i contenuti che preferisci. Seleziona “Modifica testo” o clicca due volte qui per aggiungere i tuoi contenuti
+              </p>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card kpi col-2">
+              <div class="text-block">
+                <div class="intestazione">
+                  <h3>200</h3>
+                </div>
+                <div class="testo-cta">
+                  <p class="L">
+                    Persone
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card kpi col-2">
+                <div class="text-block">
+                  <div class="intestazione">
+                    <h3>5</h3>
+                  </div>
+                  <div class="testo-cta">
+                    <p class="L">
+                      Core Team
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card kpi col-2">
+                <div class="text-block">
+                  <div class="intestazione">
+                    <h3>200M€</h3>
+                  </div>
+                  <div class="testo-cta">
+                    <p class="L">
+                        Fatturato
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card kpi col-2">
+                <div class="text-block">
+                  <div class="intestazione">
+                    <h3>326</h3>
+                  </div>
+                  <div class="testo-cta">
+                    <p class="L">
+                      Partners
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section sticky dark" id="section-4" onmouseenter="changeNav(3)">
+        <div class="section-content">
+          <!-- <div class="col-1"></div> -->
+          <div class="container-block">
+            <div class="text-block">
+              <div class="intestazione">
+                <p class="overlay">LAVORA CON NOI</p>
+                <h2 class="col-5">Candidati ad una delle posizioni aperte</h2>
+              </div>
+              <div class="testo-cta">
+                <button class="primary">
+                  <p>Esplora</p>
+                  <svg class="S">
+                    <path
+                      d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-box">
+              <div class="card kpi">
+                <div class="text-block">
+                  <div class="intestazione">
+                      <h3 class="col-4">Deep Learning Engineer</h3>
+                      <p class="overlay">roma, italy</p>
+                  </div>
+                  <div class="testo-cta">
+                    <p class>
+                        Questo è un esempio di un paragrafo. Puoi modificarlo o aggiungere i contenuti che preferisci. Seleziona “Modifica testo” o clicca due volte
+                    </p>
+                    <button class="primary">
+                      <p>Candidati</p>
+                      <svg class="S">
+                        <path
+                          d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kpi">
+                <div class="text-block">
+                  <div class="intestazione">
+                      <h3 class="col-4">Deep Learning Engineer</h3>
+                      <p class="overlay">roma, italy</p>
+                  </div>
+                  <div class="testo-cta">
+                    <p class>
+                        Questo è un esempio di un paragrafo. Puoi modificarlo o aggiungere i contenuti che preferisci. Seleziona “Modifica testo” o clicca due volte
+                    </p>
+                    <button class="primary">
+                      <p>Candidati</p>
+                      <svg class="S">
+                        <path
+                          d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kpi">
+                <div class="text-block">
+                  <div class="intestazione">
+                      <h3 class="col-4">Deep Learning Engineer</h3>
+                      <p class="overlay">roma, italy</p>
+                  </div>
+                  <div class="testo-cta">
+                    <p class>
+                        Questo è un esempio di un paragrafo. Puoi modificarlo o aggiungere i contenuti che preferisci. Seleziona “Modifica testo” o clicca due volte
+                    </p>
+                    <button class="primary">
+                      <p>Candidati</p>
+                      <svg class="S">
+                        <path
+                          d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section sticky dark" id="section-3" onmouseenter="changeNav(2)">
+        <div class="section-content">
+          <div class="container-block hero">
+            <div class="text-block col-2">
+              <div class="intestazione">
+                <p class="overlay">il settore</p>
+                <h2 class="col-2">i nostri partners</h2>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="card-box">
+              <div class="card kpi col-2">
+                <div class="text-block">
+                  <div class="intestazione">
+                    <h3>200</h3>
+                  </div>
+                  <div class="testo-cta">
+                    <p class="L">
+                      Persone
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card kpi col-2">
+                  <div class="text-block">
+                    <div class="intestazione">
+                      <h3>5</h3>
+                    </div>
+                    <div class="testo-cta">
+                      <p class="L">
+                        Core Team
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card kpi col-2">
+                  <div class="text-block">
+                    <div class="intestazione">
+                      <h3>200M€</h3>
+                    </div>
+                    <div class="testo-cta">
+                      <p class="L">
+                          Fatturato
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card kpi col-2">
+                  <div class="text-block">
+                    <div class="intestazione">
+                      <h3>326</h3>
+                    </div>
+                    <div class="testo-cta">
+                      <p class="L">
+                        Partners
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- qua componente section -->
+    <!-- <div class="section sticky dark" id="section-3" onmouseenter="changeNav(3)">
+        <div class="section-content">
+          <div class="container-block">
+            <div class="text-block">
+              <div class="intestazione">
+                <p class="overlay">overlay</p>
+                <h2 class="col-4">Here the title of the chapter</h2>
+              </div>
+              <div class="testo-cta">
+                <p class>
+                  Questo è un esempio di un paragrafo. Puoi modificarlo o
+                  aggiungere i contenuti che preferisci. Seleziona “Modifica
+                  testo” o clicca due volte qui per aggiungere i tuoi contenuti e
+                  cambiare il font. È lo spazio ideale per raccontare la tua
+                  storia e farti conoscere.
+                </p>
+                <button class="primary">
+                  <p>name</p>
+                  <svg class="S">
+                    <path
+                      d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-box">
+              <div class="card">
+                <div class="text-block">
+                  <div class="intestazione">
+                    <p class="overlay">overlay</p>
+                    <h2 class="col-4">Here the title of the chapter</h2>
+                  </div>
+                  <div class="testo-cta">
+                    <p class>
+                      Questo è un esempio di un paragrafo. Puoi modificarlo o
+                      aggiungere i contenuti che preferisci. Seleziona “Modifica
+                      testo” o clicca due volte qui per aggiungere i tuoi
+                      contenuti e cambiare il font. È lo spazio ideale per
+                      raccontare la tua storia e farti conoscere.
+                    </p>
+                    <button class="primary">
+                      <p>name</p>
+                      <svg class="S">
+                        <path
+                          d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="text-block">
+                  <div class="intestazione">
+                    <p class="overlay">overlay</p>
+                    <h2 class="col-4">Here the title of the chapter</h2>
+                  </div>
+                  <div class="testo-cta">
+                    <p class>
+                      Questo è un esempio di un paragrafo. Puoi modificarlo o
+                      aggiungere i contenuti che preferisci. Seleziona “Modifica
+                      testo” o clicca due volte qui per aggiungere i tuoi
+                      contenuti e cambiare il font. È lo spazio ideale per
+                      raccontare la tua storia e farti conoscere.
+                    </p>
+                    <button class="primary">
+                      <p>name</p>
+                      <svg class="S">
+                        <path
+                          d="M6.98535 18.6899L18.9854 6.68994M18.9854 6.68994H10.9854M18.9854 6.68994V14.6899"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
     <!-- my scripts -->
     <script src="script.js"></script>

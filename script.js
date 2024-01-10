@@ -1,3 +1,4 @@
+const root = document.querySelector(':root');
 
 
 function changeNav(section){
@@ -12,3 +13,11 @@ function changeSection(section){
         behavior: "smooth",
       });
 }
+
+
+window.onresize = function(){
+    root.style.setProperty('--VPheight', window.innerHeight+"px");
+    let color = getComputedStyle(root).getPropertyValue('--VPheight')
+    console.log(color)
+}
+

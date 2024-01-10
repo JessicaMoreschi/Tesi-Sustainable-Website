@@ -29,6 +29,7 @@
     --Stroke-S: 1px;
     --Stroke-M: 1.4px;
     --Stroke-L: 2px;
+    --VPheight: 100vh
 }
 
 .dark {
@@ -240,6 +241,15 @@ svg * {
     stroke-linejoin: round
 }
 
+button#back {
+    width: fit-content;
+    padding: var(--Padding-S, 8px) var(--Padding-M, 16px);
+}
+
+button#back p{
+    display: block;
+}
+
 .intestazione {
     display: flex;
     width: auto;
@@ -319,7 +329,7 @@ svg * {
 .section {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: var(--VPheight);
     overflow: hidden;
     padding: var(--Gap-XXL, 120px) 0px;
     flex-direction: column;
@@ -343,7 +353,7 @@ svg * {
 
 .nav-container {
     display: flex;
-    height: 800px;
+    height: var(--VPheight);
     padding: var(--Gap-XXL, 120px) var(--Gap-S, 16px);
     flex-direction: column;
     align-items: flex-start;
@@ -357,7 +367,7 @@ svg * {
 #macchina {
     position: absolute;
     z-index: 1;
-    height: calc(100vh*2.3);
+    height: calc(var(--VPheight) * 2.3);
     width: calc((var(--Column) * 12) + (var(--Gutter) * 11));
     padding-left: var(--Width-XL);
     margin-top: 20vh;
@@ -371,7 +381,39 @@ svg * {
     gap: var(--Gap-L);
 }
 
-#section-3{
+#section-3 {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+#section-0 {
+    justify-content: flex-end;
+    padding-bottom: 0;
+}
+
+.container-stripes {
+    height: 30vh;
+    width: 100vw;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    width: 1200px;
+    padding: var(--Gap-M, 20px) var(--Gap-XL, 40px) var(--Gap-M, 20px) var(--Gap-S, 16px);
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 82px;
+    background-color: var(--Color-bg-Primary);
+}
+
+.header-container {
+    display: flex;
+    height: 42px;
+    align-items: center;
+    gap: var(--Gap-S, 16px);
 }

@@ -408,7 +408,7 @@ button#back p{
     align-items: center;
     width: 100vw;
     height: 82px;
-    background-color: var(--Color-bg-Primary);
+    background-color: var(--Color-bg-Secondary);
 }
 
 .header-container {

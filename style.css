@@ -184,6 +184,11 @@ button.primary-active * {
     stroke: var(--Color-fg-Primary-inv, #000);
 }
 
+.nav-container-ghost{
+    opacity: 0;
+}
+
+
 button.ghost {
     background-color: transparent;
 }
@@ -244,6 +249,11 @@ svg * {
 button#back {
     width: fit-content;
     padding: var(--Padding-S, 8px) var(--Padding-M, 16px);
+    background-color: var(--Color-bg-Secondary);
+}
+
+button#back:active {
+    background-color: var(--Color-bg-Primary-inv);
 }
 
 button#back p{

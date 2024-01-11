@@ -26,11 +26,13 @@
     --Width-M: calc((var(--Column) * 4) + (var(--Gutter) * 3));
     --Width-L: calc((var(--Column) * 5) + (var(--Gutter) * 4));
     --Width-XL: calc((var(--Column) * 8) + (var(--Gutter) * 7));
+    --Width-ALL: calc((var(--Column) * 12) + (var(--Gutter) * 11));
     --Stroke-S: 1px;
     --Stroke-M: 1.4px;
     --Stroke-L: 2px;
     --VPheight: 100vh
 }
+
 
 .dark {
     --Color-bg-Primary: #000;
@@ -139,12 +141,8 @@ p.overlay {
     height: 100%;
 }
 
-/* .col-3 {
-    width: var(--Width-S);
-    height: 100%;
-} */
 .col-4 {
-    width: calc((var(--Column) * 3) + (var(--Gutter) * 2)) !important;
+    width: var(--Width-M) !important;
     height: 100%;
 }
 
@@ -157,6 +155,7 @@ p.overlay {
     width: var(--Width-XL) !important;
     height: 100%;
 }
+
 
 button,
 button.primary {
@@ -184,7 +183,7 @@ button.primary-active * {
     stroke: var(--Color-fg-Primary-inv, #000);
 }
 
-.nav-container-ghost{
+.nav-container-ghost {
     opacity: 0;
 }
 
@@ -223,7 +222,7 @@ button.nav:hover p {
 button.nav:hover {
     border: none;
     padding: var(--Padding-S, 8px) var(--Padding-M, 16px);
-    width: fit-content;
+    width: fit-content !important;
 }
 
 button.nav:active,
@@ -256,7 +255,7 @@ button#back:active {
     background-color: var(--Color-bg-Primary-inv);
 }
 
-button#back p{
+button#back p {
     display: block;
 }
 
@@ -331,7 +330,7 @@ button#back p{
 
 .section-content {
     display: flex;
-    width: calc((var(--Column) * 12) + (var(--Gutter) * 11));
+    width: var(--Width-ALL);
     align-items: flex-start;
     gap: var(--Gap-M, 20px);
 }
@@ -378,7 +377,7 @@ button#back p{
     position: absolute;
     z-index: 1;
     height: calc(var(--VPheight) * 2.3);
-    width: calc((var(--Column) * 12) + (var(--Gutter) * 11));
+    width: var(--Width-ALL);
     padding-left: var(--Width-XL);
     margin-top: 20vh;
 }
@@ -389,12 +388,25 @@ button#back p{
     padding: var(--Gap-XL, 40px) 0 var(--Gap-XL, 40px) 0;
     align-items: flex-start;
     gap: var(--Gap-L);
+    width: var(--Width-ALL);
+    flex-wrap: nowrap;
 }
 
-#section-3 {
+.footer * {
+    height: auto !important;
+}
+
+#section-5 {
     padding-top: 0;
     padding-bottom: 0;
+    justify-content: space-evenly;
+    gap: unset;
 }
+
+#section-5 .col-1{
+    height: 100%;
+}
+
 
 #section-0 {
     justify-content: flex-end;
@@ -426,4 +438,174 @@ button#back p{
     height: 42px;
     align-items: center;
     gap: var(--Gap-S, 16px);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --Width-S: calc((var(--Column) * 2) + (var(--Gutter) * 1));
+        --Width-M: calc((var(--Column) * 3) + (var(--Gutter) * 2));
+        --Width-L: calc((var(--Column) * 4) + (var(--Gutter) * 3));
+        --Width-XL: calc((var(--Column) * 6) + (var(--Gutter) * 5));
+        --Width-ALL: calc((var(--Column) * 10) + (var(--Gutter) * 9));
+    }
+
+    h2.col-4 {
+        width: var(--Width-XL) !important;
+    }
+
+    .section-content .col-5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px)  {
+    :root {
+        --Width-ALL: calc((var(--Column) * 8) + (var(--Gutter) * 7));
+        --Gap-XS: 8px;
+        --Gap-S: 12px;
+        --Gap-M: 16px;
+        --Gap-L: 24px;
+        --Gap-XL: 36px;
+        --Gap-XXL: 60px;
+        --Padding-S: 6px;
+        --Padding-M: 12px;
+        --Padding-L: 16px;
+        --Padding-XL: 24px;
+    }
+
+    .header {
+        height: 56px ;
+    }
+
+    button.primary {
+        height: 32px ;
+    }
+
+    button.nav {
+        height: 40px ;
+        width: 40px ;
+    }
+
+    #macchina img {
+        width: var(--Width-M) 
+    }
+
+    h1 {
+        font-size: 48px ;
+        line-height: 140% 
+    }
+
+    h2 {
+        font-size: 32px ;
+        line-height: 140% 
+    }
+
+    h3 {
+        font-size: 22px ;
+        line-height: 140% 
+    }
+
+    p {
+        font-size: 16px ;
+        line-height: 140% 
+    }
+
+    p.l {
+        font-size: 16px ;
+        line-height: 140% 
+    }
+
+    #section-0, #section-5 {
+        padding-bottom: 0 !important;
+    }
+}
+
+@media (orientation: portrait) {
+    :root {
+        --Width-S: calc((var(--Column) * 2) + (var(--Gutter) * 1));
+        --Width-M: calc((var(--Column) * 6) + (var(--Gutter) * 5));
+        --Width-L: calc((var(--Column) * 3) + (var(--Gutter) * 2));
+        --Width-XL: calc((var(--Column) * 5) + (var(--Gutter) * 4));
+        --Width-ALL: calc((var(--Column) * 6) + (var(--Gutter) * 5));
+    }
+
+    .card-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-content .col-5 {
+        display: none;
+    }
+    
+    .nav-container {
+        display: none;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        padding-top: var(--Gap-XXL);
+    }
+
+    #macchina{
+        padding-left: var(--Width-S);
+        margin-top: 60vh;
+        height: calc(var(--VPheight) * 1.4);
+    }
+
+    #macchina img{
+        padding-top: 16vh;
+    }
+
+}
+
+@media (orientation: portrait) and (max-width: 800px){
+    .sticky{
+        position: relative;
+        min-height: var(--VPheight);
+        height: auto;
+        padding-top: var(--Gap-XXL) !important;
+        padding-bottom: var(--Gap-XXL) !important;
+    }
+
+
+    .hero{
+        flex-direction: column;
+    }
+
+    :root {
+        --Width-S: calc((var(--Column) * 2) + (var(--Gutter) * 1));
+        --Width-M: calc((var(--Column) * 4) + (var(--Gutter) * 3));
+        --Width-L: calc((var(--Column) * 2) + (var(--Gutter) * 1));
+        --Width-XL: calc((var(--Column) * 3) + (var(--Gutter) * 2));
+        --Width-ALL: calc((var(--Column) * 4) + (var(--Gutter) * 3));
+    }
+
+    #macchina{
+        padding-left: var(--Width-XS);
+        margin-top: 30vh;
+        height: var(--VPheight);
+    }
+    
+}
+
+@media (orientation: portrait) and (max-width: 340px){
+
+    :root {
+        --Width-S: calc((var(--Column) * 2) + (var(--Gutter) * 1));
+        --Width-M: calc((var(--Column) * 3) + (var(--Gutter) * 2));
+        --Width-L: calc((var(--Column) * 2) + (var(--Gutter) * 1));
+        --Width-XL: calc((var(--Column) * 3) + (var(--Gutter) * 2));
+        --Width-ALL: calc((var(--Column) * 3) + (var(--Gutter) * 2));
+    }
 }

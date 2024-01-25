@@ -9,6 +9,7 @@ function changeSection(section) {
     });
 }
 
+let headerHeight = 82 //qua fai una query che cambia con il mobile
 
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
@@ -18,11 +19,11 @@ window.addEventListener("scroll", (event) => {
         document.getElementsByClassName('nav-active')[0].className = 'nav'
         document.getElementById('nav-' + (Math.floor((scroll / window.innerHeight) - 0.5))).className = 'nav nav-active'
 
-        if ((Math.floor(((scroll + 82) / window.innerHeight))) == 1
-            || (Math.floor(((scroll + 82) / window.innerHeight))) == 2) {
+        if ((Math.floor(((scroll + headerHeight) / window.innerHeight))) == 1
+            || (Math.floor(((scroll + headerHeight) / window.innerHeight))) == 2) {
             document.getElementsByClassName('header')[0].className = 'header light';
             document.getElementsByClassName('nav-container')[0].className = 'nav-container light'
-        } else if ((Math.floor(((scroll + 82) / window.innerHeight))) == 0) {
+        } else if ((Math.floor(((scroll + headerHeight) / window.innerHeight))) == 0) {
             document.getElementsByClassName('nav-container')[0].className = 'nav-container nav-container-ghost'
         }
         else {

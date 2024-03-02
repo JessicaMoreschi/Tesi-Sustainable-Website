@@ -167,6 +167,7 @@ button.primary {
     gap: var(--Gap-S, 16px);
     text-decoration: none;
     border: none;
+    cursor: pointer;
 }
 
 button:hover,
